@@ -281,7 +281,22 @@ img {
 }
 
 /* What I Build */
-.expertise { padding-top: 80px; }
+.section-expertise { padding-top: 80px; }
+
+.section-expertise .container h4 {
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #69d3ff;
+    font-weight: 500;
+    margin-bottom: 14px;
+}
+
+.section-expertise .container h2 {
+    max-width: 100%;
+    font-size: 48px;
+    line-height: 150%;
+    margin-bottom: 48px;
+}
 
 .expertise-grid { 
     display: grid; 
