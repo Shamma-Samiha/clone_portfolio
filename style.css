@@ -79,6 +79,56 @@ img {
     color: #5fe1b0; 
 }
 
+/*Mobile Menue*/
+.navbar .mobile-menu {
+    display: none;
+}
+
+/*Hamburger*/
+.mobile-menu-toggle {
+    background: none;
+    border: none;
+}
+
+.mobile-menu-toggle img {
+    display: block;
+    width: 30px;
+    height: auto;
+}
+
+/* Dropdown */
+.mobile-menu-items {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(17, 24, 32, 0.95);
+    display: none;
+}
+
+.mobile-menu-items.active {
+    display: block;
+}
+
+/* Mobile Navigation Links */
+.mobile-menu-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 0;
+    list-style: none;
+}
+
+.mobile-menu-list a {
+    color: white;
+    font-size: 16px;
+}
+
+.mobile-menu-list a:hover {
+    color: #8ac4ff;
+}
+
 /* Hero */
 .hero {
     position: relative;
@@ -118,7 +168,7 @@ img {
 }
 
 .hero-btn a {
-    gap: 15px; 
+    gap: 25px; 
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -439,4 +489,179 @@ img {
 
 .footer-links a:hover { 
     color: #69d3ff;
+}
+
+
+
+/* Responsiveness */
+@media (max-width: 768px) {
+
+    /* To Show hamburger */
+    .navbar .mobile-menu {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+     /* Navbar */
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .nav-links {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    /* Hero Section */
+    .hero-section {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding: 45px 0 60px;
+    }
+
+    .hero-text h1 {
+        font-size: 40px;
+        line-height: 1.15;
+        letter-spacing: -1px;
+    }
+
+    .hero-text p {
+        font-size: 17px;
+        margin-bottom: 25px;
+    }
+
+    .hero-btn a {
+        min-height: 48px;
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+
+    .social-link {
+        gap: 15px;
+        margin-top: 22px;
+    }
+
+    .tech-tags {
+        margin-top: 25px;
+    }
+
+    .right-hero {
+        width: 100%;
+        max-width: 550px;
+        margin: 0 auto;
+    }
+
+    /* Project Section */
+    .section-projects {
+        padding: 55px 0;
+    }
+
+    .section-projects .container h2,
+    .section-expertise .container h2 {
+        font-size: 34px;
+        line-height: 1.2;
+        margin-bottom: 30px;
+    }
+
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    .project-card img {
+        height: 180px;
+    }
+
+    .project-card h3 {
+        font-size: 22px;
+    }
+
+    .project-card p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    /* What I Build part */
+    .section-expertise {
+        padding: 50px 0;
+    }
+
+    .expertise-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .expertise-card {
+        padding: 22px;
+        min-height: 0;
+    }
+
+    .expertise-card h3 {
+        font-size: 18px;
+    }
+
+    .expertise-card p {
+        font-size: 15px;
+    }
+
+    /* Currently Building Part */
+    .building {
+        padding: 40px 0;
+    }
+
+    .building-card {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 25px;
+    }
+
+    .building-description h2 {
+        font-size: 28px;
+    }
+
+    .building-description p {
+        font-size: 16px;
+    }
+
+    /* Contact Part */
+    .contact-section {
+        padding: 50px 0;
+    }
+
+    .contact-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+        padding: 25px;
+    }
+
+    .contact-card h2 {
+        font-size: 30px;
+    }
+
+    .contact-card p {
+        font-size: 16px;
+    }
+
+    /* Footer */
+    .footer-section {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .footer-links {
+        gap: 12px;
+    }
 }
